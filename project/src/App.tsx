@@ -155,7 +155,7 @@ function App() {
               <Routes>
                 <Route path="/home" element={<Home />} />
                 <Route
-                  path="/exam/:roomId"
+                  path="/exam/:examNo"
                   element={
                     <ErrorBoundary>
                       <ExamPage />

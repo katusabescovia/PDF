@@ -173,7 +173,21 @@ const ProctoringPage: React.FC = () => {
 
   const handleBeginExam = () => {
     if (beginExamEnabled) {
-      navigate("/home");
+      const examLink = localStorage.getItem("currentExamLink");
+      if (examLink) {
+        // Extract ExamNo from the link
+        const match = examLink.match(/ExamNo=(\d+)/);
+        if (match && match[1]) {
+          const examNo = match[1];
+          localStorage.setItem("currentExamNo", examNo);
+          localStorage.setItem("currentExamFullLink", examLink);
+          navigate("/home"); // Go to Home
+        } else {
+          alert("Invalid exam link format. Cannot extract ExamNo.");
+        }
+      } else {
+        alert("No exam link found. Please start from the exam list.");
+      }
     } else {
       alert("Please ensure all conditions are met before starting the exam.");
     }
