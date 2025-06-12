@@ -1,1 +1,55 @@
+How to Run the Project
+🔧 Backend Setup
+Navigate to the backend folder:
 
+bash
+Copy
+Edit
+cd project
+node index.js
+💻 Frontend Setup
+Navigate to the frontend server:
+
+bash
+Copy
+Edit
+cd project/server
+npm run dev
+🔐 Environment Variables
+Create a .env file inside the server folder with the following content:
+
+env
+Copy
+Edit
+PORT=3001
+MONGO_URI=mongodb://localhost:27017/lecturer-system
+
+EMAIL_USER=buranipatiencepatricia@gmail.com
+EMAIL_PASS=lmym dmho kqei gtyo
+📝 Credentials to Use
+Registration Number: 202505501RL-A001
+
+Module Code: 202505301MOD-A001
+
+Academic Year: 2024/2025
+
+Semester: Sem 1
+
+🎯 Goal of the System
+The main goal is to allow students to log in and:
+
+View available exams.
+
+Enter a proctoring environment after enabling their camera.
+
+Join the exam as a streamer.
+
+Once inside:
+
+The screen splits into two parts:
+
+One side displays the exam PDF.
+
+The other side is where students submit their answers.
+
+The system should automatically fill in the student’s registration number and the exam title.
