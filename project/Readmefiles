@@ -1,35 +1,27 @@
 How to Run the Project
 🔧 Backend Setup
 Navigate to the backend folder:
-
-bash
-Copy
-Edit
 cd project
 node index.js
+
 💻 Frontend Setup
 Navigate to the frontend server:
-
-bash
-Copy
-Edit
 cd project/server
 npm run dev
+
 🔐 Environment Variables
 Create a .env file inside the server folder with the following content:
 
-env
-Copy
-Edit
 PORT=3001
 MONGO_URI=mongodb://localhost:27017/lecturer-system
 
 EMAIL_USER=buranipatiencepatricia@gmail.com
 EMAIL_PASS=lmym dmho kqei gtyo
+
 📝 Credentials to Use
 Registration Number: 202505501RL-A001
 
-Module Code: 202505301MOD-A001
+or  202505301MOD-A001
 
 Academic Year: 2024/2025
 
